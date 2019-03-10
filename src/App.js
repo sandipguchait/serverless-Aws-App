@@ -54,12 +54,17 @@ class App extends Component {
     // updating the notes on the same position in the notes list
     //taking the notes index and checking with the position of updated note
     const index = notes.findIndex(note => note.id === updatedNote.id )
-    //
+    //updating the notes in the notes arry withthe same position 
     const updatedNotes = [
+      //takes the uppper notes item before the updated notes index and adds it 
       ...notes.slice(0, index),
+      // adding the updated notes itself
       updatedNote,
+      // adding the lower notes to the notes after the updated notes
       ...notes.slice(index + 1 )
     ]
+
+    this.setState({ notes: updatedNotes , termnote: '' , id: '' })
   
   }
    // once the component mounts it shows all the listed notes using graphQl query
