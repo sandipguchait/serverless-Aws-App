@@ -1,0 +1,19 @@
+{
+    "dev": {
+        "awscloudformation": {
+            "AuthRoleName": "serverless-aws-app-20190310182634-authRole",
+            "UnauthRoleArn": "arn:aws:iam::923634483491:role/serverless-aws-app-20190310182634-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::923634483491:role/serverless-aws-app-20190310182634-authRole",
+            "Region": "ap-south-1",
+            "DeploymentBucketName": "serverless-aws-app-20190310182634-deployment",
+            "UnauthRoleName": "serverless-aws-app-20190310182634-unauthRole",
+            "StackName": "serverless-aws-app-20190310182634",
+            "StackId": "arn:aws:cloudformation:ap-south-1:923634483491:stack/serverless-aws-app-20190310182634/ef25dd60-4333-11e9-b74b-065ce6fc7b58"
+        },
+        "categories": {
+            "auth": {
+                "cognito73631638": {}
+            }
+        }
+    }
+}
