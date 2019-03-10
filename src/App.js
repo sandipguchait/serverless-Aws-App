@@ -105,14 +105,14 @@ class App extends Component {
               />
               <button className="pa2 f4"
               type="submit">
-              Add Note 
+              { this.state.id ? "Update Note" : "Add Note" }
               </button>
         </form>
        {/* Notes list  */}
           <div>
             {this.state.notes.map(note => (
-              <div key="note.id" className="flex items-center">
-                <li onClick={()=>this.updateNotes(note)} className="list pa1 f3">
+              <div className="flex items-center" key={note.id}>
+                <li onClick={()=>this.updateNotes(note)}  className="list pa1 f3">
                   {note.note}
                 </li>
                 <button  onClick={()=>this.handleDelete(note.id)} className="bg-transparent bn f4">
